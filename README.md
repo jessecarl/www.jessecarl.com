@@ -1,2 +1,5 @@
 # www.jessecarl.com
-Personal Website
+
+----
+
+[![Build Status](https://travis-ci.org/jessecarl/www.jessecarl.com.svg?branch=master)](https://travis-ci.org/jessecarl/www.jessecarl.com)
