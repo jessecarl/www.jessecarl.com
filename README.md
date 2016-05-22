@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/jessecarl/www.jessecarl.com.png?label=ready&title=Ready)](https://waffle.io/jessecarl/www.jessecarl.com)
 # www.jessecarl.com
 
 ----
