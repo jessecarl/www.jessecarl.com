@@ -4,5 +4,8 @@
 @import "normalize";
 @import "bourbon/bourbon";
 $font-stack-system: $helvetica;
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import "neat/neat";
 @import "base/base";
+
