@@ -11,7 +11,7 @@
     <ul>
       <li><h3>Follow Me</h3></li>
       {% for social_link in site.data.social %}
-        <li><a href="{{ social_link.url }}"><i class="fa fa-{{ social_link.icon }}-square"></i> {{ social_link.username }}</a></li>
+        <li><a href="{{ social_link.url }}"><i class="fa fa-{{ social_link.icon }}"></i> {{ social_link.username }}</a></li>
       {% endfor %}
     </ul>
   </div>

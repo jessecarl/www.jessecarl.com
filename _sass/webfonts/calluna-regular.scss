@@ -24,11 +24,11 @@
 
 @font-face {
     font-family: 'Calluna-Regular';
-    src: url('/fonts/Calluna-Regular/Calluna-Regular-webfont.eot');
-    src: url('/fonts/Calluna-Regular/Calluna-Regular-webfont.eot?iefix') format('eot'),
-         url('/fonts/Calluna-Regular/Calluna-Regular-webfont.woff') format('woff'),
-         url('/fonts/Calluna-Regular/Calluna-Regular-webfont.ttf') format('truetype'),
-         url('/fonts/Calluna-Regular/Calluna-Regular-webfont.svg#webfontnehNrF5g') format('svg');
+    src: url(font-path('Calluna-Regular/Calluna-Regular-webfont.eot'));
+    src: url(font-path('Calluna-Regular/Calluna-Regular-webfont.eot?iefix')) format('eot'),
+         url(font-path('Calluna-Regular/Calluna-Regular-webfont.woff')) format('woff'),
+         url(font-path('Calluna-Regular/Calluna-Regular-webfont.ttf')) format('truetype'),
+         url(font-path('Calluna-Regular/Calluna-Regular-webfont.svg#webfontnehNrF5g')) format('svg');
     font-weight: normal;
     font-style: normal;
 }
