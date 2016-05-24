@@ -1,22 +1,22 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
+<footer class="footer" role="contentinfo">
+  <div class="footer-links">
+    <ul>
+      <li><h3>Content</h3></li>
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+          <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <ul>
+      <li><h3>Follow Me</h3></li>
+      {% for social_link in site.data.social %}
+        <li><a href="{{ social_link.url }}"><i class="fa fa-{{ social_link.icon }}-square"></i> {{ social_link.username }}</a></li>
+      {% endfor %}
+    </ul>
   </div>
 
+  <hr>
+
+  <p>© Copyright 2016 Jesse Allen</p>
 </footer>
