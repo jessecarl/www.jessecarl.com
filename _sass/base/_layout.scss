@@ -21,25 +21,30 @@ header.page-header {
   .page-header-content {
     @include outer-container;
     @include clearfix;
+    font-size: modular-scale(1)
   }
 
   h1 {
     @include span-columns(12);
     font-size: modular-scale(2);
+    text-align: center;
   }
 
   p {
     @include span-columns(12);
     font-family: $heading-font-family;
     font-style: italic;
+    text-align: center;
   }
 
   @include media($medium-screen) {
     h1 {
       @include span-columns(4);
+      text-align: right;
     }
     p {
       @include span-columns(8);
+      text-align: left;
     }
   }
 
