@@ -3,14 +3,13 @@
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
-  $hero-background-top: $base-background-color;
-  $hero-background-bottom: $secondary-background-color;
-  $hero-background-alpha: 0.4;
+  $hero-background-top: $secondary-background-color;
+  $hero-background-bottom: transparent;
   $hero-color: $base-font-color;
   $gradient-angle: 5deg;
   $hero-image: '/img/design/background-texture-light.jpg';
 
-  @include background(linear-gradient($gradient-angle, transparentize($hero-background-bottom, $hero-background-alpha), transparentize($hero-background-top, $hero-background-alpha)), repeat scroll url($hero-image), $hero-background-top);
+  @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), repeat scroll url($hero-image), $hero-background-top);
   @include padding(0 0 3em 0);
 
   .hero-logo img {
