@@ -1,0 +1,55 @@
+// Homepage specific styles
+.hero {
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  $hero-background-top: $base-background-color;
+  $hero-background-bottom: $secondary-background-color;
+  $hero-background-alpha: 0.4;
+  $hero-color: $base-font-color;
+  $gradient-angle: 5deg;
+  $hero-image: '/img/design/background-texture-light.jpg';
+
+  @include background(linear-gradient($gradient-angle, transparentize($hero-background-bottom, $hero-background-alpha), transparentize($hero-background-top, $hero-background-alpha)), repeat scroll url($hero-image), $hero-background-top);
+  @include padding(0 0 3em 0);
+
+  .hero-logo img {
+    height: 4em;
+    margin-bottom: 1em;
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    margin: auto;
+    padding: 3.5em;
+    text-align: center;
+
+    .hero-copy {
+      text-align: center;
+
+      h1 {
+        color: $hero-color;
+        margin-bottom: 0;
+        font-size: 3em;
+
+        small {
+          display: block;
+          font-size: 0.5em;
+          text-transform: lowercase;
+        }
+      }
+
+      p {
+        color: $hero-color;
+        line-height: 1.4em;
+        margin: 0 auto 3em auto; 
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 40%;
+        }
+      }
+    }
+  }
+}
