@@ -12,3 +12,43 @@ section {
   @include padding(2em 1em 3em 1em);
   @include clearfix;
 }
+
+header.page-header {
+  @include padding(2em 1em 3em 1em);
+  @include clearfix;
+  @include background(linear-gradient(5deg, transparent, $secondary-background-color), repeat scroll url($background-texture-light), $secondary-background-color);
+
+  .page-header-content {
+    @include outer-container;
+    @include clearfix;
+  }
+
+  h1 {
+    @include span-columns(12);
+    font-size: modular-scale(2);
+  }
+
+  p {
+    @include span-columns(12);
+    font-family: $heading-font-family;
+    font-style: italic;
+  }
+
+  @include media($medium-screen) {
+    h1 {
+      @include span-columns(4);
+    }
+    p {
+      @include span-columns(8);
+    }
+  }
+
+  @include media($large-screen) {
+    h1 {
+      @include span-columns(2);
+    }
+    p {
+      @include span-columns(10);
+    }
+  }
+}
