@@ -1,0 +1,15 @@
+baseurl = "http://www.jessecarl.com/"
+languageCode = "en-us"
+title = "Jesse Allen"
+author = "Jesse Allen"
+disqusShortname = "jessecarl"
+copyright = "© Copyright 2016 Jesse Allen"
+
+googleAnalytics = "UA-50709811-1"
+
+[params]
+  email = "jesse@jessecarl.com"
+  tagline = "A Maker of… Code • Music • Art"
+  description = "I believe we were made to make. The feeling that we get when we finish making something is addictive, especially if that something came from raw material. When we make something with purpose, it goes beyond addictive—it becomes a way of life."
+  logoUrl = "http://www.gravatar.com/avatar/055c5f84f186142804fba9393a35ca69"
+
