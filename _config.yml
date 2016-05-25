@@ -8,8 +8,6 @@ description: > # this means to ignore newlines until "baseurl:"
   When we make something with purpose, it goes beyond addictive—it becomes a
   way of life.
 url: "http://www.jessecarl.com" # the base hostname & protocol for your site
-twitter_username: jessecarl
-github_username:  jessecarl
 logo_url: http://www.gravatar.com/avatar/055c5f84f186142804fba9393a35ca69
 
 # Build settings
@@ -26,3 +24,8 @@ sass:
 paginate: 10
 paginate_path: "/blog/page:num/"
 permalink: /blog/:year/:month/:day/:title/
+
+# Collection
+collections:
+  works:
+    output: true
