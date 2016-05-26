@@ -31,7 +31,10 @@ gulp.task('fonts', function() {
       .pipe(gulp.dest('./static/g/fonts/'));
 });
 
-var watcher = gulp.watch('./sass/**/*.scss', ['sass']);
-watcher.on('change', function(event) {
+var logChanges = function(event) {
   console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+};
+
+gulp.task('watch', ['default'], function() {
+  gulp.watch('./sass/**/*.scss', ['sass']).on('change', logChanges);
 });
