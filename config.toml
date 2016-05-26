@@ -1,7 +1,7 @@
 baseurl = "http://www.jessecarl.com/"
 languageCode = "en-us"
 title = "Jesse Allen"
-author = "Jesse Allen"
+author = ["Jesse Allen"]
 disqusShortname = "jessecarl"
 copyright = "© Copyright 2016 Jesse Allen"
 
