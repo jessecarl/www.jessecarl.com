@@ -47,3 +47,9 @@ SectionPagesMenu = "main"
   name = "Portfolio"
   identifier = "work"
   weight = 1
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  medium = "media"
+  project = "projects"
