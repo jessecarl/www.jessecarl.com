@@ -30,3 +30,8 @@ gulp.task('fonts', function() {
     gulp.src(fontAwesome.fonts)
       .pipe(gulp.dest('./static/g/fonts/'));
 });
+
+var watcher = gulp.watch('./sass/**/*.scss', ['sass']);
+watcher.on('change', function(event) {
+  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+});
