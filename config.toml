@@ -41,3 +41,9 @@ SectionPagesMenu = "main"
   pre = "<i class='fa fa-facebook-square fa-lg'></i>"
   weight = 8
   identifier = "Facebook"
+
+[[menu.main]]
+  url = "/work/"
+  name = "Portfolio"
+  identifier = "work"
+  weight = 1
