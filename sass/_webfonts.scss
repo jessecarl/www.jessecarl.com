@@ -4,6 +4,9 @@
 @function font-path($path) {
   @return "/fonts/" + $path;
 }
+@function fa-font-path($path) {
+  @return font-path($path);
+}
 
 @import "webfonts/calluna-regular";
 @import "webfonts/calluna-sans";
