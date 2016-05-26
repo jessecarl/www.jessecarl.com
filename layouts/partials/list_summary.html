@@ -1,0 +1,7 @@
+<section id="summary-list-{{.Type}}" class="summary-list {{.Type}}-list">
+  <div class="summary-list-inner">
+    {{ range .Content.Data.Pages }}
+      {{ .Render "summary" }}
+    {{ end }}
+  </div>
+</section>
