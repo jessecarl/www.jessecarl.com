@@ -1,5 +1,13 @@
-language: ruby
-rvm:
-  - 2.2.2
-install: bundle install
-script: jekyll build
+branches:
+  only:
+    - master
+language: go
+go:
+  - 1.6
+  - tip
+install:
+  - go get -v github.com/spf13/hugo
+  - npm install
+script:
+  - gulp
+  - hugo --verbose
