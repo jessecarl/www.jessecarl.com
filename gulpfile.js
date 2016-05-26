@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     neat = require('bourbon-neat');
 
 var paths = {
-  sass: "./sass/main.scss" // everything is from main
+  sass: ["./sass/**/*.scss","!./sass/**/_*.scss"] // do not directly compile scss files that begin with "_"
 };
 
 gulp.task('default', ['sass','fonts']);
