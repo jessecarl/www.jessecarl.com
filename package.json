@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jessecarl/www.jessecarl.com/issues"
   },
-  "homepage": "https://github.com/jessecarl/www.jessecarl.com#readme"
+  "homepage": "https://github.com/jessecarl/www.jessecarl.com#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
