@@ -1,5 +1,4 @@
 {{ partial "head.html" . }}
-
 {{ partial "header.html" . }}
 
 <section id="hero" class="hero">
@@ -13,7 +12,7 @@
 <section id="vision" class="vision">
   <div class="vision-inner">
     <div class="vision-copy">
-      <p>{{ .Description }}</p>
+      <p>{{ .Site.Params.Description }}</p>
       <p>About half of what I make is to combat toil and busywork. I discuss this work <a href="http://jessecarl.github.io">elsewhere</a> in great detail.</p>
       <p>The other half of what I make is to spread empathy. None of us goes through life alone. And while no individual’s experiences are exactly the same as any other’s, a common, invisible thread connects our experiences. Our most deeply formative experiences are nearly impossible to share with language alone. Instead of telling each other our feelings and experiences, art allows us to feel and experience a taste of each other’s lives. We strengthen our empathy as a collective and as individuals when we succeed in this sharing. We treat each other better when we have empathy, and we make the world a better place to live when we love our neighbors as ourselves.</p>
     </div>
@@ -21,6 +20,4 @@
 </section>
 
 {{ partial "footer.html" . }}
-
-</body>
-</html>
+{{ partial "foot.html" . }}
