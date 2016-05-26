@@ -23,10 +23,10 @@ gulp.task('sass', function(){
       ]
     }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./static/css'));
+    .pipe(gulp.dest('./static/g/css/'));
 });
 
 gulp.task('fonts', function() {
     gulp.src(fontAwesome.fonts)
-      .pipe(gulp.dest('./static/fonts'));
+      .pipe(gulp.dest('./static/g/fonts/'));
 });

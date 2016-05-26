@@ -3,3 +3,6 @@ public/
 node_modules/
 .sass-cache/
 .jekyll-metadata
+
+# files generated from Gulp are dumped here
+static/g/
