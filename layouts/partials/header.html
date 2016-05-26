@@ -1,0 +1,16 @@
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="{{ .Site.BaseURL }}#" class="logo"><img src="{{ .Site.Params.LogoURL }}" alt="{{ .Site.Title }}"></a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+
+    <nav class="site-nav" role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        {{ $currentnode := . }}
+        {{ range .Site.Menus.main }}
+          <li class="nav-link"><a href="{{ .URL }}">{{ .Pre }} <span>{{ .Name }}</span></a></li>
+        {{ end }}
+      </ul>
+    </nav>
+
+  </div>
+</header>
