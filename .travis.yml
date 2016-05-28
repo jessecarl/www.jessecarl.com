@@ -7,7 +7,10 @@ go:
   - tip
 install:
   - go get -v github.com/spf13/hugo
+  - go get -v github.com/jessecarl/portfolio-images
   - npm install
 script:
   - gulp
+  - portfolio-images -i "./photos/*.jpg" -o "./static/s/img/photos" -q 80 -s "-sm:300,-md:600,-lg:900,-xl:1200,-full:1800"
+  - portfolio-images -i "./photos/*.jpg" -o "./static/s/img/photos" -q 100 -s "-og:0"
   - hugo --verbose
