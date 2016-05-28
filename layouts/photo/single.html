@@ -1,0 +1,52 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+
+<section id="main" class="main photo-main">
+  <div class="main-inner">
+    <article id="main-article" class="photo-single">
+      <div class="single-inner">
+        <h1>{{ .Title }}</h1>
+        <p class="date">{{ .Date.Format "Mon Jan 2, 2006" }}</p>
+        {{ if .Params.image }}
+          <figure class="photo-figure">
+            {{ partial "picture" (dict "Image" $.Params.image "Title" $.Title "Type" .Type) }}
+            <figcaption>
+              {{ .Content }}
+            </figcaption>
+          </figure>
+        {{ else }}
+          {{ .Content }}
+        {{ end }}
+      </div>
+    </article>
+    <aside class="meta-single photo-meta">
+      <div class="meta-inside">
+        {{ with .Params.categories }}
+        <ul>
+          {{ range . }}
+            <li><a href="/categories/{{ . | urlize }}">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        {{ with .Params.tags }}
+        <ul>
+          {{ range . }}
+            <li> <a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        {{ with .Params.medium }}
+        <ul>
+          {{ range . }}
+            <li> <a href="/medium/{{ . | urlize }}">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    </aside>
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
+{{ partial "foot.html" . }}

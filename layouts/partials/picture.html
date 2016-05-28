@@ -1,0 +1,7 @@
+<picture>
+  <source srcset="/s/img/{{.Type}}/{{.Image}}-full.jpg" media="(min-width: 1201px)">
+  <source srcset="/s/img/{{.Type}}/{{.Image}}-xl.jpg" media="(min-width: 901px)">
+  <source srcset="/s/img/{{.Type}}/{{.Image}}-lg.jpg" media="(min-width: 601px)">
+  <source srcset="/s/img/{{.Type}}/{{.Image}}-md.jpg" media="(min-width: 301px)">
+  <img src="/s/img/{{.Type}}/{{.Image}}-sm.jpg" alt="{{ .Title }}">
+</picture>

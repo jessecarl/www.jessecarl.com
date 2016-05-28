@@ -1,7 +1,7 @@
 ---
 title: "Ada at Rest"
 date: "2014-01-11T12:00:00-07:00"
-image: "ada-at-rest.jpg"
+image: "ada-at-rest"
 medium:
   - "35mm"
   - "B&W Film"

@@ -1,7 +1,7 @@
 ---
 title: "River Valley"
 date: "2014-01-16T12:00:00-07:00"
-image: "river-valley.jpg"
+image: "river-valley"
 medium:
   - "35mm"
   - "Color Film"
