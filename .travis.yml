@@ -11,5 +11,5 @@ install:
   - npm install
 script:
   - gulp
-  - portfolio-images -i "./static/img/photos/*.jpg" -o "./static/img/responsive/photos" -q 80 -s "-sm:300,-md:600,-lg:900,-xl:1200,-full:1800"
+  - portfolio-images -i "./static/img/photo/*.jpg" -o "./static/img/responsive/photo" -q 80 -s "-sm:300,-md:600,-lg:900,-xl:1200,-full:1800"
   - hugo --verbose
