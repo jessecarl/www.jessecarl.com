@@ -16,7 +16,7 @@ section {
 header.page-header {
   @include padding(2em 1em 3em 1em);
   @include clearfix;
-  @include background(linear-gradient(5deg, transparent, $secondary-background-color), repeat scroll url($background-texture-light), $secondary-background-color);
+  @include background(linear-gradient(5deg, transparentize($secondary-background-color, 1), $secondary-background-color), repeat scroll url($background-texture-light), $secondary-background-color);
 
   .page-header-content {
     @include outer-container;

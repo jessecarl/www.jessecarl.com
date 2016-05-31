@@ -4,7 +4,7 @@
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
   $hero-background-top: $secondary-background-color;
-  $hero-background-bottom: transparent;
+  $hero-background-bottom: transparentize($hero-background-top, 1);
   $hero-color: $base-font-color;
   $gradient-angle: 5deg;
   $hero-image: $background-texture-light;
