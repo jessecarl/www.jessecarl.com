@@ -5,6 +5,10 @@ language: go
 go:
   - 1.6
   - tip
+before_install:
+  - go get -v github.com/github/git-lfs
+  - git lfs install
+  - git lfs pull
 install:
   - go get -v github.com/spf13/hugo
   - go get -v github.com/jessecarl/portfolio-images
