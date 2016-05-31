@@ -12,9 +12,7 @@ install:
   - go get -v github.com/spf13/hugo
   - go get -v github.com/jessecarl/portfolio-images
   - npm install
+  - gem install s3_website
 script:
-  - gulp
-  - portfolio-images -i "$TRAVIS_BUILD_DIR/static/img/photo/*.jpg" -o "$TRAVIS_BUILD_DIR/static/img/responsive/photo" -q 80 -s "-sm:300,-md:600,-lg:900,-xl:1200,-full:1800"
-  - portfolio-images -i "$TRAVIS_BUILD_DIR/static/img/print/*.jpg" -o "$TRAVIS_BUILD_DIR/static/img/responsive/print" -q 80 -s "-sm:300,-md:600,-lg:900,-xl:1200,-full:1800"
-  - hugo --verbose
+  - gulp && portfolio-images -i "$TRAVIS_BUILD_DIR/static/img/photo/*.jpg" -o "$TRAVIS_BUILD_DIR/static/img/responsive/photo" -q 80 -s "-sm:300,-md:600,-lg:900,-xl:1200,-full:1800" && portfolio-images -i "$TRAVIS_BUILD_DIR/static/img/print/*.jpg" -o "$TRAVIS_BUILD_DIR/static/img/responsive/print" -q 80 -s "-sm:300,-md:600,-lg:900,-xl:1200,-full:1800" && hugo --verbose
 after_success: s3_website push
