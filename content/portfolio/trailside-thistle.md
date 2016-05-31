@@ -1,5 +1,6 @@
 ---
 title: "Trailside Thistle"
+type: "photo"
 date: "2007-09-03T12:00:00-07:00"
 image: "trailside-thistle"
 aspect: "landscape"

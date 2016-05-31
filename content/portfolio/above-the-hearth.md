@@ -1,5 +1,6 @@
 ---
 title: "Above the Hearth"
+type: "photo"
 date: "2014-01-14T12:00:00-07:00"
 image: "above-the-hearth"
 aspect: "landscape"

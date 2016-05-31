@@ -1,5 +1,6 @@
 +++
 date = "2007-09-03T12:00:00-07:00"
+type = "photo"
 image = "above-the-blue-river"
 aspect = "panorama"
 medium = ["35mm", "Color Film"]

@@ -1,5 +1,6 @@
 ---
 title: "The Cut of Water"
+type: "photo"
 date: "2013-12-01T12:00:00-07:00"
 image: "the-cut-of-water"
 aspect: "landscape"

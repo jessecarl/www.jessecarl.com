@@ -3,5 +3,5 @@ medium = []
 purchaseUrl = ""
 image = ""
 aspect = ""
-type = "photo"
+type = "print"
 +++

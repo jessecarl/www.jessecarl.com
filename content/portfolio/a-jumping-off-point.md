@@ -1,5 +1,6 @@
 +++
 date = "2006-03-04T12:00:00-07:00"
+type = "photo"
 image = "a-jumping-off-point"
 aspect = "portrait"
 medium = [ "35mm", "Color Film" ]

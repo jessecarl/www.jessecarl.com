@@ -1,5 +1,6 @@
 ---
 title: "The Stage is Set"
+type: "photo"
 date: "2014-01-11T12:00:00-07:00"
 image: "the-stage-is-set"
 aspect: "landscape"

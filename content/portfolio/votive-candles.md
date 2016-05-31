@@ -1,5 +1,6 @@
 ---
 title: "Votive Candles"
+type: "photo"
 date: "2014-01-16T12:00:00-07:00"
 image: "votive-candles"
 aspect: "landscape"

@@ -1,5 +1,6 @@
 ---
 title: "Mic Me Up"
+type: "photo"
 date: "2014-02-27T12:00:00-07:00"
 image: "mic-me-up"
 aspect: "landscape"

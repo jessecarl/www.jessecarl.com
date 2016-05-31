@@ -1,5 +1,6 @@
 ---
 title: "Ada at Rest"
+type: "photo"
 date: "2014-01-11T12:00:00-07:00"
 image: "ada-at-rest"
 aspect: "landscape"
