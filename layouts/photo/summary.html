@@ -1,0 +1,17 @@
+<article class="photo-summary portfolio-summary {{.Params.aspect}}">
+  <div class="portfolio-image">
+    <a href="{{ .Permalink }}">
+    {{ partial "picture" (dict "Image" $.Params.image "Title" $.Title "Type" .Type) }}
+    </a>
+  </div>
+  <header>
+  <h2>
+    <a href='{{ .Permalink }}'> {{ .Title }}</a>
+    <small class="date"><nobr>{{ .Date.Format "Jan 2, 2006" }}</nobr></small>
+  </h2>
+  </header>
+  <div class="summary-copy">
+    {{ .Summary }}
+    <p> <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a></p>
+  </div>
+</article>

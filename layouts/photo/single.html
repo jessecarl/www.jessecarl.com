@@ -1,0 +1,26 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+
+{{ partial "section_header.html" . }}
+
+<section id="main" class="main photo-main portfolio-main">
+  <div class="main-inner">
+    <article id="main-article" class="photo-single">
+      <div class="single-inner">
+        <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
+        {{ .Content }}
+      </div>
+    </article>
+    <figure class="photo-figure">
+      {{ partial "picture" (dict "Image" $.Params.image "Title" $.Title "Type" .Type) }}
+      <figcaption>{{ .Title }}</figcaption>
+    </figure>
+    <aside class="meta-single photo-meta">
+      {{ partial "portfolio_meta.html" . }}
+    </aside>
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
+{{ partial "foot.html" . }}

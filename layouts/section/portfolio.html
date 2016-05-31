@@ -1,0 +1,16 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+
+{{ partial "section_header.html" (dict "Title" (.Title | singularize) "Description" "Music and visual art have the same end: empathy. A photograph or a phonograph both have the capacity to make me feel alongside another person.") }}
+
+<section id="main" class="summary-listing portfolio-listing">
+  <div class="summary-list-inner">
+    {{ range .Paginator.Pages }}
+      {{ .Render "summary" }}
+    {{ end }}
+  </div>
+  {{ partial "pagination.html" . }}
+</section>
+
+{{ partial "footer.html" . }}
+{{ partial "foot.html" . }}

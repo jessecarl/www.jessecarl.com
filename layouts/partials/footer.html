@@ -1,0 +1,22 @@
+<footer class="footer" role="contentinfo">
+  <div class="footer-links">
+    <ul>
+      <li><h3>Content</h3></li>
+      {{ $currentnode := . }}
+      {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Pre }} <span>{{ .Name }}</span></a></li>
+      {{ end }}
+    </ul>
+    <ul>
+      <li><h3>Follow Me</h3></li>
+      {{ range .Site.Menus.social }}
+        <li><a href="{{ .URL }}">{{ .Pre }} <span>{{ .Name }}</span></a></li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <hr>
+
+  <p>{{ .Site.Copyright }}</p>
+  {{ if .RSSlink }}<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
+</footer>

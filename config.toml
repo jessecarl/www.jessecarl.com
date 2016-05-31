@@ -1,0 +1,55 @@
+baseurl = "http://www.jessecarl.com/"
+languageCode = "en-us"
+title = "Jesse Allen"
+author = ["Jesse Allen"]
+disqusShortname = "jessecarl"
+copyright = "© Copyright 2016 Jesse Allen"
+
+googleAnalytics = "UA-50709811-1"
+
+[params]
+  Email = "jesse@jessecarl.com"
+  Tagline = "A Maker of… Code • Music • Art"
+  Description = "I believe we were made to make. The feeling that we get when we finish making something is addictive, especially if that something came from raw material. When we make something with purpose, it goes beyond addictive—it becomes a way of life."
+  LogoURL = "http://www.gravatar.com/avatar/055c5f84f186142804fba9393a35ca69"
+SectionPagesMenu = "main"
+
+[[menu.social]]
+  url = "https://soundcloud.com/jessecarl-1"
+  name = "jessecarl-1"
+  pre = "<i class='fa fa-soundcloud fa-lg'></i>"
+  weight = 1
+  identifier = "SoundCloud"
+
+[[menu.social]]
+  url = "https://twitter.com/jessecarl"
+  name = "jessecarl"
+  pre = "<i class='fa fa-twitter-square fa-lg'></i>"
+  weight = 2
+  identifier = "Twitter"
+
+[[menu.social]]
+  url = "https://www.instagram.com/bittersmcallen"
+  name = "bittersmcallen"
+  pre = "<i class='fa fa-instagram fa-lg'></i>"
+  weight = 4
+  identifier = "Instagram"
+
+[[menu.social]]
+  url = "https://www.facebook.com/jessecarl"
+  name = "jessecarl"
+  pre = "<i class='fa fa-facebook-square fa-lg'></i>"
+  weight = 8
+  identifier = "Facebook"
+
+[[menu.main]]
+  url = "/portfolio/"
+  name = "Portfolio"
+  identifier = "portfolio"
+  weight = 1
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  medium = "media"
+  project = "projects"

@@ -1,0 +1,32 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+
+<section id="main" class="main">
+  <div class="main-inner">
+    <article id="main-article" class="basic-single">
+      <div class="single-inner">
+        <h1>{{ .Title }}</h1>
+        <p class="date">{{ .Date.Format "Mon Jan 2, 2006" }}</p>
+        {{ .Content }}
+      </div>
+    </article>
+    <aside class="meta-single">
+      <div class="meta-inside">
+        <ul>
+          {{ range .Params.categories }}
+            <li><a href="{{ $baseurl }}/categories/{{ . | urlize }}">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+        <ul>
+          {{ range .Params.tags }}
+            <li> <a href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
+{{ partial "foot.html" . }}

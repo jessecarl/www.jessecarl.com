@@ -1,8 +1,16 @@
 branches:
   only:
     - master
-language: ruby
-rvm:
-  - 2.2.2
-install: bundle install
-script: jekyll build
+language: go
+go:
+  - 1.6
+  - tip
+install:
+  - go get -v github.com/spf13/hugo
+  - go get -v github.com/jessecarl/portfolio-images
+  - npm install
+script:
+  - gulp
+  - portfolio-images -i "./static/img/photo/*.jpg" -o "./static/img/responsive/photo" -q 80 -s "-sm:300,-md:600,-lg:900,-xl:1200,-full:1800"
+  - portfolio-images -i "./static/img/print/*.jpg" -o "./static/img/responsive/print" -q 80 -s "-sm:300,-md:600,-lg:900,-xl:1200,-full:1800"
+  - hugo --verbose

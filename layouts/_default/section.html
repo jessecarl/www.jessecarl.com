@@ -1,0 +1,15 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+
+{{ partial "section_header.html" . }}
+
+<section id="main" class="summary-listing basic-listing">
+  <div class="summary-list-inner">
+    {{ range .Data.Pages }}
+      {{ .Render "summary" }}
+    {{ end }}
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
+{{ partial "foot.html" . }}
