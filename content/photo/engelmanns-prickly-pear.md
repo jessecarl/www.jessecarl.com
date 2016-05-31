@@ -2,6 +2,7 @@
 title: "Engelmann's Prickly Pear"
 date: "2013-12-01T12:00:00-07:00"
 image: "engelmanns-prickly-pear"
+aspect: "landscape"
 medium:
   - "35mm"
   - "Color Film"

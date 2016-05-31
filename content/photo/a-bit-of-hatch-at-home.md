@@ -2,6 +2,7 @@
 title: "A Bit of Hatch at Home"
 date: "2014-03-09T12:00:00-07:00"
 image: "a-bit-of-hatch-at-home"
+aspect: "portrait"
 medium:
   - "35mm"
   - "B&W Film"

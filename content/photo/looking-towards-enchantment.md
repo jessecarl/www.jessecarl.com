@@ -2,6 +2,7 @@
 title: "Looking Towards Enchantment"
 date: "2007-09-03T12:00:00-07:00"
 image: "looking-towards-enchantment"
+aspect: "landscape"
 medium:
   - 35mm
   - Color Film

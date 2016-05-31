@@ -2,6 +2,7 @@
 title: "The Cut of Water"
 date: "2013-12-01T12:00:00-07:00"
 image: "the-cut-of-water"
+aspect: "landscape"
 medium:
   - "35mm"
   - "Color Film"

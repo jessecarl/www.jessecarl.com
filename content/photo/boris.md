@@ -2,6 +2,7 @@
 title: "Boris"
 date: "2013-03-30T12:00:00-07:00"
 image: "boris"
+aspect: "landscape"
 medium:
   - "35mm"
   - "Color Film"

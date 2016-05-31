@@ -2,6 +2,7 @@
 title: "Afternoon Piano"
 date: "2009-04-15T12:00:00-07:00"
 image: "afternoon-piano"
+aspect: "landscape"
 medium:
   - "35mm"
   - "Color Film"

@@ -2,6 +2,7 @@
 title: "Brandenburg Mountain"
 date: "2014-01-16T12:00:00-07:00"
 image: "brandenburg-mountain"
+aspect: "landscape"
 medium:
   - "35mm"
   - "Color Film"

@@ -2,6 +2,7 @@
 title: "The Stage is Set"
 date: "2014-01-11T12:00:00-07:00"
 image: "the-stage-is-set"
+aspect: "landscape"
 medium:
   - "35mm"
   - "B&W Film"

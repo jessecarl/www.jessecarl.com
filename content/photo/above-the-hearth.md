@@ -2,6 +2,7 @@
 title: "Above the Hearth"
 date: "2014-01-14T12:00:00-07:00"
 image: "above-the-hearth"
+aspect: "landscape"
 medium:
   - "35mm"
   - "B&W Film"
