@@ -43,9 +43,9 @@ SectionPagesMenu = "main"
   identifier = "Facebook"
 
 [[menu.main]]
-  url = "/work/"
+  url = "/portfolio/"
   name = "Portfolio"
-  identifier = "work"
+  identifier = "portfolio"
   weight = 1
 
 [taxonomies]
