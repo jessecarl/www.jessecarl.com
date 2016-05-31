@@ -13,6 +13,10 @@ section {
   @include clearfix;
 }
 
+picture {
+  display: block;
+}
+
 header.page-header {
   @include padding(2em 1em 3em 1em);
   @include clearfix;
@@ -39,21 +43,21 @@ header.page-header {
 
   @include media($medium-screen) {
     h1 {
-      @include span-columns(4);
+      @include span-columns(5);
       text-align: right;
     }
     p {
-      @include span-columns(8);
+      @include span-columns(7);
       text-align: left;
     }
   }
 
   @include media($large-screen) {
     h1 {
-      @include span-columns(2);
+      @include span-columns(4);
     }
     p {
-      @include span-columns(10);
+      @include span-columns(8);
     }
   }
 }

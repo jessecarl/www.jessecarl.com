@@ -9,6 +9,7 @@ medium:
   - "B&W Film"
   - "Ilford HP5+"
 purchaseUrl: http://fineartamerica.com/featured/a-bit-of-hatch-at-home-jesse-allen.html
+description: "Ristra of Hatch Chile and garlic hangs on the kitchen wall."
 ---
 
 Ristra of Hatch Chile and garlic hangs on the kitchen wall.

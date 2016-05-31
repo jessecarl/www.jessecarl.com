@@ -1,0 +1,43 @@
+<div class="meta-inside">
+  {{ with .Params.categories }}
+    <ul>
+      {{ range . }}
+        <li><a href="/categories/{{ . | urlize }}">{{ . }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  {{ with .Params.tags }}
+    <ul>
+      {{ range . }}
+        <li> <a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  {{ with .Params.medium }}
+    <ul>
+      {{ range . }}
+        <li> <a href="/medium/{{ . | urlize }}">{{ . }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  {{ if (or .Prev .Next) }}
+    <ul>
+      {{ with .Prev }}
+        <li>
+          <a class="previous" href="{{.Permalink}}">
+            <i class="fa fa-arrow-left"></i>
+            <span>{{.Title}}</span>
+          </a>
+        </li>
+      {{ end }}
+      {{ with .Next }}
+        <li>
+          <a class="next" href="{{.Permalink}}">
+            <i class="fa fa-arrow-right"></i>
+            <span>{{.Title}}</span>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</div>

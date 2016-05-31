@@ -124,3 +124,35 @@
     }
   }
 }
+
+.portfolio-main {
+  .main-inner {
+    @include outer-container();
+
+    figure {
+      @include span-columns(7);
+      padding: 0.5em;
+      border: $base-border;
+      border-radius: $base-border-radius;
+      box-shadow: 0 2px 4px darken($base-background-color, 40%);
+    }
+    article {
+      @include span-columns(3);
+      border-bottom: $base-border;
+
+      p.date {
+        font-family: $heading-font-family;
+        font-size: modular-scale(1);
+      }
+    }
+    aside {
+      @include span-columns(2);
+
+      ul {
+        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
+        border-bottom: $base-border;
+      }
+    }
+  }
+}
