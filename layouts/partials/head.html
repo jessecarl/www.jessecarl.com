@@ -6,7 +6,13 @@
   {{ partial "meta.html" . }}
 
   <base href="{{ .Site.BaseURL }}">
-  <title>{{ .Site.Title }} – {{ with .Title }}{{ . }}{{ else }}{{ .Site.Params.Tagline }}{{ end }}</title>
+  {{ if .IsHome }}
+    <title>{{ .Site.Title }} – {{ .Site.Params.Tagline }}</title>
+  {{ else if .IsNode }}
+    <title>{{ .Site.Title }} – {{ .Title | singularize }}</title>
+  {{ else }}
+    <title>{{ .Site.Title }} – {{ .Title }}</title>
+  {{ end }}
   <link rel="canonical" href="{{ .Permalink }}">
   {{ if .RSSlink }}<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
 
